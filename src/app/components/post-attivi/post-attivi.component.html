@@ -1,0 +1,12 @@
+<div class="containr mt-5">
+   <div *ngFor="let post of posts">
+     <div *ngIf="post.attivo" class="card mb-4">
+       <h5 class="card-headr">Post attivo</h5>
+       <div class="card-body ">
+         <h5 class="card-title">Post numero {{post.id}} - {{ post.titolo }}</h5>
+         <p class="card-text">{{ post.body }}</p>
+       </div>
+     </div>
+   </div>
+
+</div>
